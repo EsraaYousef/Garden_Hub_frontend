@@ -1280,46 +1280,125 @@ footer {
     opacity: 1; } }
 /*****************END HOME PAGE*****************/
 /*****************START LOGIN PAGE*****************/
-.login-wrapper {
+.login-wrapper,
+.questions-wrapper {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   text-align: center;
   position: relative;
   z-index: 1; }
-  .login-wrapper .center-logo {
+  .login-wrapper .center-logo,
+  .questions-wrapper .center-logo {
     margin: 40px auto; }
-    .login-wrapper .center-logo img {
+    .login-wrapper .center-logo img,
+    .questions-wrapper .center-logo img {
       width: 200px; }
-  .login-wrapper .content {
+  .login-wrapper .content,
+  .questions-wrapper .content {
     width: 50%;
     margin: auto; }
-    .login-wrapper .content .intro-wrapper-text {
+    .login-wrapper .content .intro-wrapper-text,
+    .questions-wrapper .content .intro-wrapper-text {
       margin-bottom: 40px; }
-      .login-wrapper .content .intro-wrapper-text h3 {
+      .login-wrapper .content .intro-wrapper-text h3,
+      .questions-wrapper .content .intro-wrapper-text h3 {
         font-size: 32px;
         color: #000000;
         margin-bottom: 20px; }
-      .login-wrapper .content .intro-wrapper-text p {
+      .login-wrapper .content .intro-wrapper-text p,
+      .questions-wrapper .content .intro-wrapper-text p {
         font-size: 18px;
         margin-bottom: 0; }
-  .login-wrapper .forget-password {
+  .login-wrapper .forget-password,
+  .questions-wrapper .forget-password {
     text-align: left; }
-    .login-wrapper .forget-password a {
+    .login-wrapper .forget-password a,
+    .questions-wrapper .forget-password a {
       color: #26975A;
       font-size: 14px;
       font-family: "Bahij_TheSansArabic-SemiBold"; }
-  .login-wrapper .bottom-link {
+  .login-wrapper .bottom-link,
+  .questions-wrapper .bottom-link {
     position: absolute;
     bottom: 40px;
     left: 40px;
     z-index: 1;
     color: #26975A;
     font-family: "Bahij_TheSansArabic-SemiBold"; }
-    .login-wrapper .bottom-link i {
+    .login-wrapper .bottom-link i,
+    .questions-wrapper .bottom-link i {
       display: inline-block;
       margin-right: 5px;
       vertical-align: middle; }
+
+.questions-wrapper .content {
+  width: 100%; }
+
+.q-row-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -15px;
+  margin-right: -15px;
+  align-items: baseline; }
+
+.accordion-item {
+  border: none;
+  border-radius: 10px !important;
+  overflow: hidden;
+  background: transparent; }
+  .accordion-item:not(:last-of-type) {
+    margin-bottom: 20px; }
+  .accordion-item .accordion-body {
+    background-color: #ffffff;
+    text-align: start; }
+    .accordion-item .accordion-body p {
+      text-align: start; }
+
+.accordion-button {
+  padding-right: 50px;
+  position: relative;
+  border-radius: 0 !important;
+  font-family: "Bahij_TheSansArabic-SemiLight";
+  background-color: rgba(255, 255, 255, 0.5); }
+  .accordion-button:active, .accordion-button:focus {
+    box-shadow: none;
+    outline: none; }
+  .accordion-button:before {
+    content: "";
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: rgba(38, 151, 90, 0.2);
+    border-radius: 50%;
+    overflow: hidden; }
+  .accordion-button:after {
+    width: auto;
+    height: auto;
+    position: absolute;
+    right: 19px;
+    top: 17px;
+    font-size: 14px;
+    color: #26975A;
+    background-image: none;
+    transform: none;
+    content: "\f067";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900; }
+  .accordion-button:not(.collapsed) {
+    background-color: white;
+    color: #000000;
+    box-shadow: none;
+    border-radius: 10px;
+    overflow: hidden; }
+    .accordion-button:not(.collapsed):after {
+      background-image: none;
+      transform: none;
+      content: "\f068"; }
 
 @media (min-width: 768px) {
   .modal-dialog {
@@ -1332,7 +1411,18 @@ footer {
     display: block; }
 
   .navbar-expand-lg .navbar-collapse {
-    position: relative; } }
+    position: relative; }
+
+  .accordion-item {
+    flex: 0 0 auto;
+    width: calc(50% - 30px);
+    margin: 0 15px; }
+
+  .package-card .card-body ul {
+    height: 164px; }
+
+  footer .content {
+    width: 50%; } }
 @media (max-width: 1200px) {
   .navbar .navbar-brand {
     max-width: 100px; }
@@ -1367,6 +1457,33 @@ footer {
 
   .hidden-mobile {
     display: none !important; }
+
+  .q-row-block {
+    margin: 0; }
+
+  .accordion-item {
+    flex: 0 0 auto;
+    width: 100%;
+    margin: 0; }
+    .accordion-item .accordion-body {
+      padding: 10px; }
+      .accordion-item .accordion-body p {
+        font-size: 12px;
+        line-height: 20px; }
+
+  .accordion-button {
+    font-size: 13px;
+    padding-right: 40px; }
+    .accordion-button:before {
+      right: 10px;
+      top: 10px;
+      width: 25px;
+      height: 25px;
+      line-height: 25px; }
+    .accordion-button:after {
+      right: 17px;
+      top: 16px;
+      font-size: 12px; }
 
   .card {
     padding: 10px; }

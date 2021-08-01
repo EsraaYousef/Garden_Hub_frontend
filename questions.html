@@ -73,37 +73,443 @@
         </div>
     </div>
     <!-- loading window -->
-    <!--Start login-->
+    <!-- Start Header -->
+    <header>
+        <div class="navbar navbar-expand-lg white-bg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="./Assets/img/logo/Gardens_Hub_Logo.svg" class="img-fluid" alt="img" />
+                </a>
+                <button class="navbar-toggler menu-wrapper collapsed" type="button" data-toggle="collapse"
+                    data-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="hamburger-menu"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="mainNavbar">
+                    <ul class="navbar-nav main-navbar">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#packages">الباقات</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#how_to_work">كيف يعمل</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#works">أعمالنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#contact">اتصل بنا</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="login.html">تسجيل دخول</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav main-navbar">
+                        <li class="nav-item">
+                            <a class="nav-link" href="questions.html">الاسئلة الشائعة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="">English</a>
+                        </li>
+                        <li class="nav-item w-submenu">
+                            <a class="nav-link" href="#">
+                                <span class="flag">
+                                    <img src="./Assets/img/dynamic/icons/united-arab-emirates.svg" alt="aed">
+                                </span>
+                                AEU
+                            </a>
+                            <ul class="submenu">
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <span class="flag">
+                                            <img src="./Assets/img/dynamic/icons/saudi-arabia.svg" alt="sau">
+                                        </span>
+                                        ريال سعودي
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="" class="nav-link">
+                                        <span class="flag">
+                                            <img src="./Assets/img/dynamic/icons/egypt.svg" alt="eg">
+                                        </span>
+                                        جنيه مصري
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+    <!--Start Questions-->
     <section class="questions-wrapper bg-grey">
         <div class="container">
             <div class="content center">
                 <div class="intro-wrapper-text">
-                    <h3 data-aos="fade-down" data-aos-delay="400">مرحبا، قم بتسجيل الدخول</h3>
-                    <p data-aos="fade-up" data-aos-delay="500">سجل دخول لتتمكن من طلب مشروعك</p>
+                    <h3 data-aos="fade-down" data-aos-delay="400">الاسئلة الشائعة</h3>
                 </div>
+                <div class="q-row-block accordion" id="questionAccordion">
+                    <div class="accordion-item" data-aos="fade-in">
+                        <h2 class="accordion-header" id="heading1">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                                خطوات التصميم
+                            </button>
+                        </h2>
+                        <div id="collapse1" class="accordion-collapse collapse" aria-labelledby="heading1"
+                            data-bs-parent="#questionAccordion">
+                            <div class="accordion-body">
+                                <p>
+                                    خبرني المزيد عن إجراءات gardens hub ؟
+                                    لتبدأ مع gardens hub ، قم بشراء إحدى الباقات المتوفرة على صفحة باقات
+                                    التصاميم .
+                                    الخطوة الاولى : حدد واشتر باقة التصميم المناسبة لك. لا تنسى النظر في
+                                    إضافاتنا!
+                                    صفحة المشروع : من خلال تسجيلك الى صفحة صفحة متابعة المشروع سيمكنك متابعة
+                                    مشروعك خطوة بخطوة خلال عملية تصميم الحديقة .
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end accordion-item 1-->
+                    <div class="accordion-item" data-aos="fade-in">
+                        <h2 class="accordion-header" id="heading2">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                                كم من الوقت يستغرق الحصول على تصميمي؟
+                            </button>
+                        </h2>
+                        <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="heading2"
+                            data-bs-parent="#questionAccordion">
+                            <div class="accordion-body">
+                                <p>
+                                    بعد مكالمة الفيديو مع المصمم الخاص بك ، سيتم تسليم تصميم الحديقة في
+                                    غضون1-2 أسابيع. و تعتمد بعض أجزاء عملية التصميم على موافقة العميل على
+                                    العناصر - لذلك كلما تمت الموافقة عليها بشكل أسرع ، زادت سرعة تقدم
+                                    التصميم . قد يتم تمديد الجداول الزمنية قليلاً خلال موسمنا المزدحمة .
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end accordion-item 2-->
+                    <div class="accordion-item" data-aos="fade-in">
+                        <h2 class="accordion-header" id="heading3">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                                أين تتوفر خدمات التصميم الخاصة بك؟هل أحتاج إلى خارطة الممتلكات؟
+                            </button>
+                        </h2>
+                        <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="heading3"
+                            data-bs-parent="#questionAccordion">
+                            <div class="accordion-body">
+                                <p>
+                                    الحدائق عبر الإنترنت تقدم خدمات التصميم في جميع في الامارات .. يتمتع
+                                    فريقنا بخبرة معمارية وبستنة في كل المناطق
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end accordion-item 3-->
+                    <div class="accordion-item" data-aos="fade-in">
+                        <h2 class="accordion-header" id="heading4">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                                ما الذي يجب أن أتوقعه من مكالمة الفيديو مع المصمم الخاص بي؟
+                            </button>
+                        </h2>
+                        <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="heading4"
+                            data-bs-parent="#questionAccordion">
+                            <div class="accordion-body">
+                                <p>
+                                    محادثة ودية! ، سيسأل المصمم الخاص بك عنك وعن منزلك وعن أسلوبك الشخصي وعن استخدام
+                                    المساحات الداخلية والخارجية وما تريد تحقيقه من خلال مشروعك. كلما كان ذلك ممكنًا ،
+                                    نفضل استخدام الدردشة المرئية حيث تتجول معنا في ساحة منزلك
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end accordion-item 4-->
+                    <div class="accordion-item" data-aos="fade-in">
+                        <h2 class="accordion-header" id="heading5">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                                من الذي سيصمم خطتي؟
+                            </button>
+                        </h2>
+                        <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="heading5"
+                            data-bs-parent="#questionAccordion">
+                            <div class="accordion-body">
+                                <p>
+                                    تم اختيار مصممي الحدائق في gardens hub يدويًا وتدريبهم على هذا النموذج الجديد عبر
+                                    الإنترنت لتصميم الحدائق . لدينا فريق من مهندسي المناظر الطبيعية والمصممين وأخصائيي
+                                    البستنة الموهوبين للغاية الذين يبدعون في كل تصميم.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end accordion-item 5-->
+                    <div class="accordion-item" data-aos="fade-in">
+                        <h2 class="accordion-header" id="heading6">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                                هل يمكنني تعديل مخطط تصميم الحديقة عند الانتهاء منه؟
+                            </button>
+                        </h2>
+                        <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="heading6"
+                            data-bs-parent="#questionAccordion">
+                            <div class="accordion-body">
+                                <p>
 
-                <form action="">
-                    <div class="form-group">
-                        <input class="form-control" type="email" name="uEmail" id="uEmail"
-                            placeholder="البريد الالكتروني">
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group">
-                        <input class="form-control" type="password" name="uPassword" id="uPassword"
-                            placeholder="كلمة المرور">
+                    <!--end accordion-item 6-->
+                    <div class="accordion-item" data-aos="fade-in">
+                        <h2 class="accordion-header" id="heading7">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                                أين تتوفر خدمات التصميم الخاصة بك؟
+                            </button>
+                        </h2>
+                        <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="heading7"
+                            data-bs-parent="#questionAccordion">
+                            <div class="accordion-body">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="forget-password">
-                        <a href="">نسيت كلمة المرور</a>
-                    </p>
-                    <button type="submit" class="btn btn-main btn-hover btn-block">تسجيل دخول</button>
-                </form>
-                <div class="d-block mt-40 font-meduim">
-                    <p class="text-black">ليس لديك حساب؟ <a href="register" class="main-color">بدء مشروع جديد</a></p>
+                    <!--end accordion-item 7-->
+                    <div class="accordion-item" data-aos="fade-in">
+                        <h2 class="accordion-header" id="heading8">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                                لماذا يجب علي الاعتماد على جاردن ماركت بدلاً من التصميم بنفسي؟
+                            </button>
+                        </h2>
+                        <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="heading8"
+                            data-bs-parent="#questionAccordion">
+                            <div class="accordion-body">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end accordion-item 8-->
+                    <div class="accordion-item" data-aos="fade-in">
+                        <h2 class="accordion-header" id="heading9">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                                ما الفرق بين الشراكة معنا أو مع مصمم الحديقة المحلي؟
+                            </button>
+                        </h2>
+                        <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="heading9"
+                            data-bs-parent="#questionAccordion">
+                            <div class="accordion-body">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end accordion-item 9-->
+                    <div class="accordion-item" data-aos="fade-in">
+                        <h2 class="accordion-header" id="heading10">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                                هل يمكنني رؤية عملك السابق؟
+                            </button>
+                        </h2>
+                        <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="heading10"
+                            data-bs-parent="#questionAccordion">
+                            <div class="accordion-body">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end accordion-item 10-->
+                    <div class="accordion-item" data-aos="fade-in">
+                        <h2 class="accordion-header" id="heading11">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                                لا أعرف أي شيء عن البستنة أو النباتات، هل يمكنني استخدام جاردن ماركت ؟
+                            </button>
+                        </h2>
+                        <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="heading11"
+                            data-bs-parent="#questionAccordion">
+                            <div class="accordion-body">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end accordion-item 11-->
+                    <div class="accordion-item" data-aos="fade-in">
+                        <h2 class="accordion-header" id="heading12">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                                أنا لا أعرف ماهو استايل حديقتي - هل هذا مهم ؟
+                            </button>
+                        </h2>
+                        <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="heading12"
+                            data-bs-parent="#questionAccordion">
+                            <div class="accordion-body">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end accordion-item 12-->
+                    <div class="accordion-item" data-aos="fade-in">
+                        <h2 class="accordion-header" id="heading13">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                                هل يمكن لـ ( gardens hub ) العمل مع مساحات من أي حجم؟
+                            </button>
+                        </h2>
+                        <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="heading13"
+                            data-bs-parent="#questionAccordion">
+                            <div class="accordion-body">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end accordion-item 13-->
+                    <div class="accordion-item" data-aos="fade-in">
+                        <h2 class="accordion-header" id="heading14">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                                هل يمكن لـ ( gardens hub ) العمل بأي ميزانية؟
+                            </button>
+                        </h2>
+                        <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="heading14"
+                            data-bs-parent="#questionAccordion">
+                            <div class="accordion-body">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end accordion-item 14-->
+                    <div class="accordion-item" data-aos="fade-in">
+                        <h2 class="accordion-header" id="heading15">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                                ما هو المتضمن في باقة التصميم؟
+                            </button>
+                        </h2>
+                        <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="heading15"
+                            data-bs-parent="#questionAccordion">
+                            <div class="accordion-body">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end accordion-item 15-->
+                    <div class="accordion-item" data-aos="fade-in">
+                        <h2 class="accordion-header" id="heading16">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                                ما هو المتضمن في باقة التصميم؟
+                            </button>
+                        </h2>
+                        <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="heading16"
+                            data-bs-parent="#questionAccordion">
+                            <div class="accordion-body">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end accordion-item 16-->
+                    <div class="accordion-item" data-aos="fade-in">
+                        <h2 class="accordion-header" id="heading17">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                                ما الذي لا يتم تضمينه في باقة التصميم؟
+                            </button>
+                        </h2>
+                        <div id="collapse17" class="accordion-collapse collapse" aria-labelledby="heading17"
+                            data-bs-parent="#questionAccordion">
+                            <div class="accordion-body">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end accordion-item 17-->
+                    <div class="accordion-item" data-aos="fade-in">
+                        <h2 class="accordion-header" id="heading18">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                                بمجرد أن أحصل على مخطط الحديقة الخاصة بي، ماذا بعد ذلك؟
+                            </button>
+                        </h2>
+                        <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="heading18"
+                            data-bs-parent="#questionAccordion">
+                            <div class="accordion-body">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end accordion-item 18-->
+                    <div class="accordion-item" data-aos="fade-in">
+                        <h2 class="accordion-header" id="heading19">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse19" aria-expanded="false" aria-controls="collapse19">
+                                ماذا لو لم تكن النباتات متوفرة في المشاتل ؟
+                            </button>
+                        </h2>
+                        <div id="collapse19" class="accordion-collapse collapse" aria-labelledby="heading19"
+                            data-bs-parent="#questionAccordion">
+                            <div class="accordion-body">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end accordion-item 19-->
+                    <div class="accordion-item" data-aos="fade-in">
+                        <h2 class="accordion-header" id="heading20">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapse20" aria-expanded="false" aria-controls="collapse20">
+                                هل يمكنك إحالتي إلى مهنيين آخرين ذوي صلة؟
+                            </button>
+                        </h2>
+                        <div id="collapse20" class="accordion-collapse collapse" aria-labelledby="heading20"
+                            data-bs-parent="#questionAccordion">
+                            <div class="accordion-body">
+                                <p>
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end accordion-item 20-->
+
                 </div>
             </div>
         </div>
-        <a href="index.html" class="bottom-link">الرجوع للرئيسية <i class="fas fa-arrow-left"></i></a>
     </section>
-    <!--End login-->
+    <!--End Questions-->
 
 
 
