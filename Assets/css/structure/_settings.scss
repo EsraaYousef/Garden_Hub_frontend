@@ -1,0 +1,58 @@
+/*
+    typed..Esraa Yousef
+*/
+
+$white-color: #ffffff;
+$black-color: #000000;
+$main-color: #26975A;
+$second-color: #FF6161;
+$dark-color: #545454;
+$font-color: #9dac9b;
+$light-grey: #F7F7F7;
+$control-color: #CACACA;
+$radius: 10px;
+$bar-width: 25px;
+$bar-height: 3px;
+$bar-spacing: 8px;
+
+%shadow {
+    -webkit-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.12);
+    -moz-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.12);
+    -o-box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.12);
+}
+
+%ease {
+    -webkit-transition: all 0.5s linear 0s;
+    -moz-transition: all 0.5s linear 0s;
+    -o-transition: all 0.5s linear 0s;
+    transition: all 0.5s linear 0s;
+}
+
+
+/* fonts */
+@font-face {
+    font-family: 'Bahij_TheSansArabic-ExtraBold';
+    src: url('../fonts/Bahij_TheSansArabic-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bahij_TheSansArabic-SemiBold';
+    src: url('../fonts/Bahij_TheSansArabic-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Bahij_TheSansArabic-SemiLight';
+    src: url('../fonts/Bahij_TheSansArabic-SemiLight.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+$font-regular: 'Bahij_TheSansArabic-SemiLight';
+$font-medium: 'Bahij_TheSansArabic-SemiBold';
+$font-bold: 'Bahij_TheSansArabic-ExtraBold';
