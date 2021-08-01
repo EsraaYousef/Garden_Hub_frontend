@@ -7,7 +7,7 @@ $(document).ready(function () {
     easing: "ease-out-back", // default easing for AOS animations
   });
 
-  if ($(window).width() < 560) {
+  if ($(window).width() < 992) {
     AOS.init({
       once: true,
     });
@@ -24,9 +24,17 @@ $(document).ready(function () {
   $(".menu-wrapper").on("click", function () {
     $(".menu-wrapper").toggleClass("open");
     $(".hamburger-menu").toggleClass("animate");
+    $(".navbar-collapse").toggleClass("show");
     $(".navbar-nav").toggleClass("open");
     $("html").toggleClass("noscroll");
-    $(".navbar-brand img.only-mobile").toggleClass("hidden");
+  });
+  $(".nav-link").click(function () {
+    $(".navbar-collapse.show").removeClass("show");
+    $(".navbar .menu-wrapper .hamburger-menu.animate").removeClass("animate");
+    $(".navbar .menu-wrapper.open").removeClass("open");
+    $(".navbar-collapse.show ul.navbar-nav.main-navbar.open").removeClass(
+      "open"
+    );
   });
 
   //work gallery
