@@ -28,6 +28,12 @@ $(document).ready(function () {
     $(".navbar-nav").toggleClass("open");
     $("html").toggleClass("noscroll");
   });
+  //toggle class active
+  $("header .nav-link").click(function () {
+    $("header .nav-link").removeClass("active");
+    $(this).toggleClass("active");
+  });
+  //remove menu on mobile
   $(".nav-link").click(function () {
     $(".navbar-collapse.show").removeClass("show");
     $(".navbar .menu-wrapper .hamburger-menu.animate").removeClass("animate");

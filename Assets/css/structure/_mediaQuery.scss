@@ -290,6 +290,9 @@
       font-size: 14px;
     }
   }
+  .content-w-half {
+    width: 100%;
+  }
   //LOGIN
   .login-wrapper {
     .center-logo {
@@ -299,7 +302,6 @@
       }
     }
     .content {
-      width: 100%;
       .intro-wrapper-text {
         margin-bottom: 20px;
         h3 {
