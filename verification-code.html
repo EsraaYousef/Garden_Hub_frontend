@@ -37,7 +37,7 @@
     <!-- if english language -->
     <!-- <link rel="stylesheet" href="Assets/css/style-ltr.css" /> -->
 
-    <title>Gardens Hub | Login</title>
+    <title>Gardens Hub | Verify Code</title>
     <link rel="shortcut icon" href="Assets/img/logo/favicon.svg" type="image/x-icon" />
 
     <!--[if lt IE 9]>
@@ -72,42 +72,30 @@
         </div>
     </div>
     <!-- loading window -->
-    <!--Start login-->
-    <section class="height-vh login-wrapper bg-grey">
+
+    <!--Start verification code--->
+    <section class="height-vh verification-wrapper login-wrapper bg-grey">
         <div class="container">
             <div class="center-logo">
                 <img src="./Assets/img/logo/Gardens_Hub_Logo.svg" alt="Garden">
             </div>
             <div class="content content-w-half center">
                 <div class="intro-wrapper-text">
-                    <h3 data-aos="fade-down" data-aos-delay="400">مرحبا، قم بتسجيل الدخول</h3>
-                    <p data-aos="fade-up" data-aos-delay="500">سجل دخول لتتمكن من طلب مشروعك</p>
+                    <h3 data-aos="fade-down" data-aos-delay="400">رمز التفعيل</h3>
+                    <p data-aos="fade-up" data-aos-delay="500">من فضلك ادخل الكود المستلم عبر بريدك الالكتروني</p>
                 </div>
-
-                <form action="">
+                <form action="reset-password.html">
                     <div class="form-group">
-                        <label class="control-label">البريد الالكتروني</label>
-                        <input class="form-control" type="email" name="uEmail" id="uEmail"
-                            placeholder="email@email.com">
+                        <label class="control-label">كود التفعيل</label>
+                        <input class="form-control" type="text" name="" id="" placeholder="123456">
                     </div>
-                    <div class="form-group">
-                        <label class="control-label">كلمة المرور</label>
-                        <input class="form-control" type="password" name="uPassword" id="uPassword" value="0000">
-                    </div>
-                    <p class="forget-password">
-                        <a href="forget-password.html">نسيت كلمة المرور</a>
-                    </p>
-                    <button type="submit" class="btn btn-main btn-hover btn-block">تسجيل دخول</button>
+                    <button type="submit" class="btn btn-main btn-hover btn-block">ارسال</button>
                 </form>
-                <div class="d-block mt-40 font-meduim">
-                    <p class="text-black">ليس لديك حساب؟ <a href="park-design.html" class="main-color">بدء مشروع
-                            جديد</a></p>
-                </div>
             </div>
         </div>
         <a href="index.html" class="bottom-link">الرجوع للرئيسية <i class="fas fa-arrow-left"></i></a>
     </section>
-    <!--End login-->
+    <!--End verification code-->
 
 
 
@@ -117,6 +105,7 @@
     <script src="Assets/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="Assets/js/script.js"></script>
+
 
 </body>
 

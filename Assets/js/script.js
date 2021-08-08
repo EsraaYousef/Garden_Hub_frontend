@@ -14,7 +14,7 @@ $(document).ready(function () {
   }
   //add fixed to navbar
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 50) {
+    if ($(this).scrollTop() > 80) {
       $(".navbar").addClass("fixed-top");
     } else {
       $(".navbar").removeClass("fixed-top");
@@ -42,41 +42,8 @@ $(document).ready(function () {
       "open"
     );
   });
-
-  //work gallery
-  Fancybox.bind('[data-fancybox="gallery"]', {
-    animated: false,
-    dragToClose: false,
-    showClass: false,
-    hideClass: false,
-    closeButton: "top",
-
-    Image: {
-      click: "close",
-      wheel: "slide",
-      zoom: false,
-      fit: "contain",
-    },
-  });
-
-  $(".icon.fav").on("click", function () {
-    $(this).toggleClass("liked");
-  });
-  $(".ch-grid").on("click", function () {
-    $(".grid-cols").toggleClass("flex-column");
-  });
-
-  $(".add-reply").on("click", function () {
-    $(this).parent().next().toggleClass("visible");
-  });
-
-  //input code
-  $(".input-code input").keyup(function () {
-    if (this.value.length == this.maxLength) {
-      $(this).parent().next().find("input").focus();
-    }
-  });
 });
+
 // upload img avatar
 // upload img
 $(document).ready(function () {
