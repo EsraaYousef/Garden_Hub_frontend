@@ -1,6 +1,5 @@
 .form-group {
   position: relative;
-  overflow: hidden;
   margin-bottom: 25px;
   &.bg-main-light {
     background-color: rgba(38, 151, 90, 0.11);
@@ -100,8 +99,8 @@ select::-ms-expand {
 .custom-select {
   width: 100%;
 }
-.rtl .custom-select,
-[dir="rtl"] .custom-select {
+.custom-select,
+.custom-select {
   -webkit-appearance: none;
   background: #fff url("../img/dynamic/icons/arrow-down.png") no-repeat left
     0.75rem center;
@@ -122,12 +121,12 @@ select::-ms-expand {
   }
 }
 
-.rtl .custom-control,
-[dir="rtl"] .custom-control {
+.custom-control,
+.custom-control {
   margin-left: 0;
 }
 
-[dir="rtl"] .custom-select {
+.custom-select {
   &.no-caret {
     background: transparent;
   }
@@ -178,6 +177,7 @@ select::-ms-expand {
     color: $dark-color;
     font-family: $font-medium;
     padding: 12px 48px;
+    margin: 0;
     cursor: pointer;
     @extend %radius;
 
@@ -194,8 +194,7 @@ select::-ms-expand {
     }
     &:before {
       background: transparent;
-      transition: 0.1s width cubic-bezier(0.2, 0.79, 0.25, 0.82) 0s,
-        0.3s height ease-out 0.1s;
+      transition: 0.1s width ease-out 0s, 0.3s height ease-out 0.1s;
       z-index: 2;
       overflow: hidden;
       background-repeat: no-repeat;
@@ -372,6 +371,9 @@ a {
   }
 }
 
+.bold {
+  font-weight: bold;
+}
 .height-vh {
   position: relative;
   z-index: 1;
@@ -382,8 +384,10 @@ a {
 .d-row {
   &.d-flex {
     flex-wrap: wrap;
-    .form-group {
+    .form-group,
+    .main-description {
       width: 100%;
+      .half-width,
       &.half-width {
         width: 50%;
         &:nth-child(2n + 1) {
@@ -452,6 +456,19 @@ a {
   text-align: center;
   display: block;
 }
+.hidden {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+.visible {
+  display: block;
+  visibility: visible;
+  opacity: 1;
+}
+.ease {
+  @extend %ease;
+}
 .header-wrapper {
   margin: 0 auto 20px;
   overflow: hidden;
@@ -469,7 +486,7 @@ a {
   }
 }
 .has-border-bottom {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   margin-bottom: 20px;
   border-bottom: 1px solid $main-color;
 }
@@ -568,7 +585,7 @@ a {
         &:after {
           width: 12px;
           height: 12px;
-          background-color: rgba(38, 151, 90, 0.3);
+          background-color: transparent;
         }
       }
     }
@@ -615,7 +632,8 @@ a {
     &:after {
       width: 12px;
       height: 12px;
-      background-color: rgba(38, 151, 90, 0.3);
+      // background-color: rgba(38, 151, 90, 0.3);
+      background-color: transparent;
     }
   }
 }

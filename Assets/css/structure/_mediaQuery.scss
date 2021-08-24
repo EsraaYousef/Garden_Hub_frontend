@@ -9,6 +9,9 @@
   .only-mobile {
     display: none;
   }
+  .px-100 {
+    padding: 0 100px;
+  }
 
   .hidden-mobile {
     display: block;
@@ -20,11 +23,14 @@
     }
   }
 
-  .accordion-item {
-    flex: 0 0 auto;
-    width: calc(50% - 30px);
-    margin: 0 15px;
+  .q-row-block {
+    .accordion-item {
+      flex: 0 0 auto;
+      width: calc(50% - 30px);
+      margin: 15px;
+    }
   }
+
   .package-card {
     .card-body ul {
       height: 164px;
@@ -146,7 +152,6 @@
   .accordion-item {
     flex: 0 0 auto;
     width: 100%;
-    margin: 0;
     .accordion-body {
       padding: 10px;
       p {
@@ -332,6 +337,14 @@
   body {
     font-size: 14px;
   }
+  .h5,
+  h5 {
+    font-size: 14px;
+  }
+  .h3,
+  h3 {
+    font-size: 15px;
+  }
   .full-width-btn {
     width: auto;
   }
@@ -342,11 +355,15 @@
   .btn-main,
   .btn-hover {
     height: 42px;
-    line-height: 42px;
-    padding: 0 16px;
+    line-height: 26px;
+    padding: 8px 16px;
+    font-size: 14px;
   }
   .form-group {
     margin-bottom: 15px;
+    flex-direction: column;
+    justify-content: flex-start !important;
+    align-items: start !important;
   }
 
   .form-control {
@@ -359,6 +376,9 @@
   }
 
   label {
+    font-size: 13px;
+  }
+  .control-label {
     font-size: 13px;
   }
 
@@ -383,7 +403,10 @@
       }
     }
   }
-
+  .nav-tabs .nav-item:not(:last-of-type) {
+    margin: 0;
+    margin-bottom: 20px;
+  }
   //
   .header-wrapper {
     h3 {
@@ -487,6 +510,178 @@
     }
     .social-links {
       margin-top: 20px;
+    }
+  }
+  .gallery-details {
+    margin-top: 30px;
+    p {
+      font-size: 13px;
+      line-height: 23px;
+    }
+  }
+  .carousel {
+    height: 180px;
+  }
+  .carousel__slide img {
+    height: 180px;
+  }
+  .main-description {
+    .main-title {
+      font-size: 15px;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+    }
+    .sub-title {
+      font-size: 13px;
+      margin-bottom: 10px;
+    }
+  }
+  .list-has-icon li {
+    font-size: 13px;
+  }
+  .vertical-tabs {
+    .nav-tabs {
+      flex-direction: row;
+      justify-content: center;
+      flex-wrap: wrap;
+      width: 100%;
+      overflow: hidden;
+      overflow-x: auto;
+      // padding-bottom: 10px;
+
+      &::-webkit-scrollbar {
+        height: 4px;
+      }
+      .nav-item {
+        width: 70px;
+        &:not(:last-of-type) {
+          margin: 0 0 8px 4px;
+        }
+      }
+      .nav-link {
+        min-width: 70px;
+        text-align: center;
+        font-size: 11px;
+        line-height: 14px;
+        padding: 4px 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        height: 65px;
+      }
+    }
+    .col-sm-12 {
+      &:not(:last-of-type) {
+        .grid {
+          padding: 0;
+          margin-bottom: 20px;
+          background-color: $white-color !important;
+        }
+      }
+    }
+
+    .tab-content {
+      padding: 0;
+    }
+  }
+
+  .custom-input-group label:after,
+  .custom-input-group label:before {
+    top: 6px !important;
+    right: 0;
+    width: 18px;
+    height: 18px;
+  }
+  input-group label:after,
+  .main-description .features-list .custom-input-group label:before {
+    right: 0;
+    top: 2px;
+  }
+  .accordion-item {
+    .custom-input-group label:after,
+    .custom-input-group label:before {
+      top: 12px !important;
+    }
+  }
+  .custom-input-group input[type="radio"]:checked + label:before,
+  .custom-input-group input[type="checkbox"]:checked + label:before {
+    width: 18px;
+    height: 18px;
+  }
+  .custom-input-group label,
+  .main-description .features-list .control-label {
+    padding-right: 25px;
+  }
+  .btn-200 {
+    padding: 8px 16px;
+    min-width: 120px;
+    font-size: 14px;
+  }
+  .sub-tab {
+    .sm-title h6 {
+      font-size: 13px;
+      margin-bottom: 5px;
+    }
+    .back-label {
+      font-size: 13px;
+    }
+  }
+  .item-upload {
+    margin-bottom: 20px;
+  }
+  .custom-input-group label {
+    padding-left: 4px;
+  }
+  .wizard-wrapper {
+    .card-work {
+      .custom-input-group {
+        height: 120px;
+        label {
+          &:after,
+          &:before {
+            width: 18px;
+            height: 18px;
+          }
+        }
+      }
+    }
+    .nextprevious {
+      flex-direction: column;
+    }
+    .steps-progress {
+      width: 200px;
+    }
+    .custom-input-group label:after,
+    .custom-input-group label:before {
+      top: 12px !important;
+      right: 4px;
+    }
+  }
+  .pallet-colors .color {
+    width: 26px;
+    height: 26px;
+  }
+
+  .login-wrapper,
+  .questions-wrapper,
+  .park-design-wrapper,
+  .thanks-wrapper,
+  .payment-wrapper {
+    .content {
+      .intro-wrapper-text {
+        h3 {
+          font-size: 18px;
+          color: $black-color;
+        }
+        h6 {
+          font-size: 14px;
+        }
+        p {
+          font-size: 13px;
+          line-height: 23px;
+        }
+      }
     }
   }
 }

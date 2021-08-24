@@ -26,3 +26,20 @@ ul {
 [dir="rtl"] .text-right {
   text-align: right !important;
 }
+
+* {
+  &::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  &::-webkit-scrollbar-track {
+    // @extend %shadow;
+    background-color: $white-color;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $main-color;
+    outline: 1px solid $main-color;
+    border-radius: 2px;
+  }
+}

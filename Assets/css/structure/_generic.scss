@@ -15,20 +15,6 @@ body {
   font-size: 14px;
   line-height: 24px;
   text-align: start;
-
-  &::-webkit-scrollbar {
-    width: 8px;
-  }
-
-  &::-webkit-scrollbar-track {
-    @extend %shadow;
-  }
-
-  &::-webkit-scrollbar-thumb {
-    background-color: $main-color;
-    outline: 1px solid $main-color;
-    border-radius: 2px;
-  }
 }
 
 a {

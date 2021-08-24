@@ -35,7 +35,7 @@
     <!-- custom style -->
     <link rel="stylesheet" href="Assets/css/style.css" />
 
-    <title>Gardens Hub | Thanks</title>
+    <title>Gardens Hub | Payment</title>
     <link rel="shortcut icon" href="Assets/img/logo/favicon.svg" type="image/x-icon" />
 
     <!--[if lt IE 9]>
@@ -145,25 +145,74 @@
         </div>
     </header>
     <!-- End Header -->
-    <!--Start thanks-->
-    <section class="height-vh thanks-wrapper bg-white">
-        <div class="container">
-            <div class="content content-w-half center">
-                <div class="intro-wrapper-text">
-                    <h3 class="w-underline" data-aos="fade-down" data-aos-delay="400">شكرًا لك على البدء مع <span
-                            class="main-color">جاردنز ماركت</span> . يبدو أنك مناسب تمامًا لخدمتنا!</h3>
-                    <p data-aos="fade-up" data-aos-delay="500">
-                        الرجاء تحديد باقة التصميم و<br />
-                        سيتم إرشادك من خلال الخطوات التالية.
-                    </p>
+    <!--Start Payment-->
+    <section class="height-vh payment-wrapper bg-grey">
+        <div class="container wizard-wrapper">
+            <div class="row">
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="payment-data white-bg w-radius p-20">
+                        <div class="intro-wrapper-text">
+                            <h5>ادخل بيانات الدفع</h5>
+                        </div>
+                        <form action="thanks.html">
+                            <div
+                                class="form-group text-start custom-input-group d-flex justify-content-between align-items-center has-border-bottom">
+                                <input class="control-wave" type="radio" name="paySelectOption" id="paySelectOption1">
+                                <label class="control-label" for="paySelectOption1">
+                                    Credit Card / Visa</label>
+                                <div class="imgs">
+                                    <img src="./Assets/img/transfer/visa.png" alt="visa">
+                                    <img src="./Assets/img/transfer/mastercard.png" alt="mastercard">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="control-label">Card Number</label>
+                                <input type="number" class="form-control" placeholder="**** **** **** ***">
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-8 col-lg-8 col-md-12">
+                                    <div class="form-group">
+                                        <label class="control-label">Card Number</label>
+                                        <input type="date" class="form-control" placeholder="MM / YY">
+                                    </div>
+                                </div>
+                                <div class="col-xl-4 col-lg-4 col-md-12">
+                                    <div class="form-group">
+                                        <label class="control-label">Expiry Date</label>
+                                        <input type="number" class="form-control" placeholder="***">
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-main btn-hover btn-200">تأكيد الدفع</button>
+                        </form>
+                    </div>
                 </div>
-                <a href="index.html#packages" class="btn btn-main btn-hover btn-200">اختار الباقة المناسبة</a>
-
-
+                <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12">
+                    <div class="payment-details white-bg w-radius p-20">
+                        <div class="intro-wrapper-text">
+                            <h5>تفاصيل الدفع</h5>
+                        </div>
+                        <div class="has-border-bottom">
+                            <p>
+                                <span class="package-name black-color">الساحة الامامية</span>
+                                <span class="package-price dark-color">1500 AED</span>
+                            </p>
+                            <p>
+                                <span class="package-name clack-color">ضريبة الدفع</span>
+                                <span class="package-price dark-color">150 AED</span>
+                            </p>
+                        </div>
+                        <h6 class="total">
+                            <span>اجمالي الدفع</span>
+                            <span class="main-color">1650 AED</span>
+                        </h6>
+                    </div>
+                </div>
             </div>
         </div>
+
     </section>
-    <!--End thanks-->
+    <!--End Payment-->
 
 
 
@@ -171,9 +220,9 @@
     <script src="Assets/js/jquery-3.3.1.min.js"></script>
     <script src="Assets/js/popper.min.js"></script>
     <script src="Assets/js/bootstrap.bundle.min.js"></script>
-    <!-- <script src="Assets/js/wow.min.js"></script> -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="Assets/js/script.js"></script>
+
 
 </body>
 
