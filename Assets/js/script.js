@@ -11,6 +11,7 @@ $(document).ready(function () {
   if ($(window).width() < 992) {
     AOS.init({
       once: true,
+      disable: "mobile",
     });
   }
   //add fixed to navbar

@@ -1071,9 +1071,8 @@ footer {
         font-size: 32px;
         color: $black-color;
         margin-bottom: 20px;
-        direction: initial;
         position: relative;
-        direction: initial;
+        direction: inherit;
         &.w-underline {
           padding-bottom: 20px;
           &:after {
@@ -1306,7 +1305,8 @@ footer {
   }
   //
   .card-work {
-    margin-bottom: 0;
+    // margin-bottom: 0;
+    max-height: 180px;
     .custom-input-group {
       height: 180px;
       margin-bottom: 30px;
@@ -1329,6 +1329,7 @@ footer {
         font-size: 14px;
         z-index: 9;
         background: none;
+        text-shadow: 2px 2px #000000;
         @extend %ease;
 
         &:after,
@@ -1662,7 +1663,7 @@ a {
     }
   }
   .tab-content {
-    padding: 40px;
+    padding: 15px;
     .custom-input-group {
       margin-bottom: 10px;
     }
